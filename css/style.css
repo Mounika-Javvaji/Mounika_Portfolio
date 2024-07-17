@@ -1,0 +1,236 @@
+/* Reset some default styles */
+html {
+  scroll-behavior: smooth;
+}
+body, h2, h4, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header .row {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header .three.columns {
+    flex: 1;
+  }
+  
+  .header .nine.columns {
+    flex: 3;
+  }
+  
+  .header h2 {
+    margin: 0;
+  }
+  
+  .header p {
+    margin: 5px 0;
+  }
+  
+  .header img {
+    max-width: 100%;
+  }
+  
+  .navbar {
+    background: #444;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-item {
+    margin-right: 20px;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-link:hover {
+    text-decoration: underline;
+  }
+  
+  .docs-section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .docs-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .docs-section p {
+    margin-bottom: 10px;
+  }
+  
+  .project-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .project-image-container {
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .project-caption {
+    font-size: 16px;
+  }
+  .six.columns {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+  }
+  
+  .six.columns:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .six.columns {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+    }
+  }
+  
+  .footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .footer .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer .four.columns {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer span {
+    margin-left: 10px;
+  }
+  
+  .fa-linkedin-square, .fa-github {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .fa-linkedin-square:hover, .fa-github:hover {
+    color: #ccc;
+  }
+  
+  ul.timeline {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul.timeline li {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 2px solid #333;
+    position: relative;
+  }
+  
+  ul.timeline li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #333;
+    position: absolute;
+    left: -6px;
+    top: 5px;
+  }
+  
+  ul.timeline .direction-l .flag-wrapper, 
+  ul.timeline .direction-r .flag-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ul.timeline .direction-l .flag-wrapper .flag, 
+  ul.timeline .direction-r .flag-wrapper .flag {
+    font-weight: bold;
+  }
+  
+  ul.timeline .direction-l .desc, 
+  ul.timeline .direction-r .desc {
+    margin-top: 5px;
+  }
+  
+  button.active {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button.active:hover {
+    background-color: #555;
+  }
+  
+  .tab-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+  
+  .tab-pane {
+    display: none;
+  }
+  
+  .tab-pane.active {
+    display: block;
+  }
+  
